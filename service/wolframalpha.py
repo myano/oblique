@@ -15,6 +15,8 @@ class Main(base.RequestHandler):
 
     def get(self, *args):
 
+        return self.ok("This feature, WolframAlpha, has been deprecated due to WolframAlpha's strict new updates and policies.")
+
         query = urllib.unquote_plus(args[1])
         query = urllib.urlencode({"i": query})
 
